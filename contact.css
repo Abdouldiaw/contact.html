@@ -1,0 +1,127 @@
+
+    *{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: hwb(264 95% 3%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    overflow: hidden;
+    min-height: 480px;
+    width: 768px;
+    max-width: 100%;
+    background-color: hsl(240, 83%, 91%);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, 45),
+       0 8px 8px rgba(0, 32, 63, 45);
+}
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+}
+.sin-up-container{
+    left: 10;
+    height: 50%;
+}
+.login-container{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+form{
+    background-color:hsl(240, 30%, 54%);
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+input{
+    background-color: #e8efef;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+button{
+    background-color: #293358;
+    color: #e2e5e8;
+    border: 1px solid hsl(240, 18%, 96%);
+    font-size: 16px;
+    padding: 16px 32px;
+    margin-top: 24px;
+    letter-spacing: 1px;
+   
+
+}
+button:hover{
+
+}
+.social-containert{
+    margin: 24px 0;
+}
+.social-containert a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #adf0d1;
+
+}
+.overlay-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+}
+.overlay{
+    background: linear-gradient(to right, #adf0d1, #e7f0fd);
+    background:#adf0d1 ;
+    color: #00203f;
+    position: relative;
+    left: 100%;
+    height: 100%;
+}
+.overlay-panel{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform:translateX() ;
+}
+.h1{
+    top: auto;
+}
+.bg-icon{
+    top: 2px;
+    height: 30%;
+}
+.size-btn{
+    font-size:2rem;
+}
